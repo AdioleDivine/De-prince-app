@@ -72,8 +72,8 @@ class AuthRequests {
     }
   }
 
-    // ignore: missing_return
-  Future<UserData> userSignIn(String vcode, password, context) async {
+  // ignore: missing_return
+  Future<UserData> staffSignIn(String vcode, password, context) async {
     SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
     var url = Api.$BASE_URL + Endpoints.staffLogin;
     _loader.show(context, 'Please wait...');
